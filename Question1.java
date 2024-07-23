@@ -5,6 +5,7 @@ public class Question1{
 	//Question1 part1
 		Scanner keyboardInput = new Scanner(System.in);
 		StringBuilder sb = new StringBuilder();
+		StringBuilder modifiedString  = new StringBuilder();
 		String firstName;
 		String middleName;
 		String lastName;
@@ -30,6 +31,23 @@ public class Question1{
 		}else{
 			System.out.println("Names are not equal.");
 		}
+		
+	//Question1 part3
+		for (char c : result.toCharArray()) {
+			if(c=='a'){
+				modifiedString.append('@');
+			}else if(c=='e'){
+				modifiedString.append('3');
+			}else{
+				modifiedString.append(c);
+			}
+		 }
+		 System.out.println("Modified String : ");
+		 System.out.println(modifiedString.toString());
+		 String upperCaseString = result.toUpperCase();
+		 System.out.println("Upper Case String : ");
+		 System.out.println(upperCaseString);
+  
 		
 	}
 }
